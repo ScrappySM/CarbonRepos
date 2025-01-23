@@ -1,0 +1,35 @@
+{
+  "dependencies": [
+    {
+      "name": "curl",
+      "features": [
+        "http2"
+      ]
+    },
+    "fmt",
+    {
+      "name": "glad",
+      "features": [
+        "gl-api-46"
+      ]
+    },
+    "glfw3",
+    {
+      "name": "imgui",
+      "features": [
+        "docking-experimental",
+        "glfw-binding",
+        "opengl3-binding"
+      ]
+    },
+    {
+      "name": "simdjson",
+      "features": [
+        "threads",
+        "utf8-validation"
+      ]
+    },
+    "spdlog",
+    "tracy"
+  ]
+}

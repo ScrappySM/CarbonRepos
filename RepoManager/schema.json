@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "game": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "required": [
+          "name",
+          "description",
+          "version"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "github": {
+            "type": "object",
+            "properties": {
+              "user": {
+                "type": "string",
+                "minLength": 1
+              },
+              "repo": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "user",
+              "repo"
+            ]
+          },
+          "verifiedCommits": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "downloadUrls": {
+            "type": "object",
+            "properties": {
+              "latest": {
+                "type": "array",
+                "items": {
+                  "required": [],
+                  "properties": {}
+                }
+              },
+              "adbasn": {
+                "type": "array",
+                "items": {
+                  "required": [],
+                  "properties": {}
+                }
+              }
+            },
+            "required": [
+              "latest",
+              "adbasn"
+            ]
+          }
+        }
+      }
+    },
+    "modtool": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "required": [
+          "name",
+          "description",
+          "version"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "github": {
+            "type": "object",
+            "properties": {
+              "user": {
+                "type": "string",
+                "minLength": 1
+              },
+              "repo": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "user",
+              "repo"
+            ]
+          },
+          "verifiedCommits": {
+            "type": "array",
+            "items": {
+              "required": [],
+              "properties": {}
+            }
+          },
+          "downloadUrls": {
+            "type": "object",
+            "properties": {
+              "latest": {
+                "type": "array",
+                "items": {
+                  "required": [],
+                  "properties": {}
+                }
+              },
+              "adbasn": {
+                "type": "array",
+                "items": {
+                  "required": [],
+                  "properties": {}
+                }
+              }
+            },
+            "required": [
+              "latest",
+              "adbasn"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "game",
+    "modtool"
+  ]
+}
